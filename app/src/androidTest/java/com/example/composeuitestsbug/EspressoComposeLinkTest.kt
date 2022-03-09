@@ -2,7 +2,6 @@ package com.example.composeuitestsbug
 
 import android.content.Intent
 import androidx.compose.ui.test.assertTextContains
-import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.junit4.createEmptyComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
@@ -36,7 +35,7 @@ class EspressoComposeLinkTest {
   val composeTestRule by lazy { createEmptyComposeRule() }
 
   @Test
-  fun useAppContext() {
+  fun testNavigation() {
     Thread.sleep(4000)
     Espresso.onView(withId(R.id.next_btn)).perform(click())
 
