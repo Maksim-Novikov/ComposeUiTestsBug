@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <androidx.compose.ui.platform.ComposeView
+      android:id="@+id/feature_compose_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone"
+      />
+
+  <FrameLayout
+      android:id="@+id/feature_fragment_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Open Compose"
+        />
+  </FrameLayout>
+
+</FrameLayout>
